@@ -1,0 +1,9 @@
+/*
+ *       There are more things to be added but i followed the required i.e :
+ *          Customer_class >>  could buy book and we can add it but only check balance and then make librarySystem complete the buy without change my  code
+ *          having Shiping  , Email Services classes but i assumed u dont need them from (" no need for implemntion")
+ *          for Data  we could make the map >> map[string , ..]  to map[int,...]  to map[int , .. , custom_hash] >> this make operations approximately O(1) if we know the hash
+ *          ****thanks for reading ^_^ ****
+ *
+ *
+ */
