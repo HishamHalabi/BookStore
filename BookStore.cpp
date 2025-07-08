@@ -42,7 +42,9 @@ public  :
 
               for (auto [bookID , kk]  : del)  {
                         BooksStock.erase(bookID) ;
+                        cout<<bookID<<"\n" ;
               }
+              cout<<"UpdateD Suceesfuly\n" ;
       }
 
     // if we have customer class it should have it's But that call this after check balance...
@@ -72,13 +74,14 @@ public  :
 
 
       void DisplayBooks()  {
-               cout<<"*************Available Books \n" ;
+               cout<<"*************Available Books************ \n" ;
                int c= 0 ;
+
                for (auto [ISBN ,  cnt]  : BooksStock)  {
                         if (cnt == 0 ) continue;
                         c++  ;
                         Book book = RelatedBook[ISBN] ;
-                        cout<<ISBN <<" "<<book.gettitle()<<"|  "<<book.getType() <<"| "<<book.getYear() <<" "<<book.getPrice() <<"\n" ;
+                        cout<<"ID   "<< ISBN <<"  Title :   "<<book.gettitle()<<" Type:  "<<book.getType() <<"   Year:  "<<book.getYear() <<"  Price "<<book.getPrice() <<"\n" ;
 
                 }
                if (c== 0)  {
@@ -87,3 +90,4 @@ public  :
                cout<<"\n-----------------------------------\n"  ;
       }
 };
+
